@@ -4,7 +4,7 @@ header('Content-Type: text/html; charset=UTF-8');
 header("Cache-Control: no-store, no-cache");
 include 'txprotect.php';
 $target = $_GET('url');//'http://输入网址';
-echo $target;exit();
+
 function checkmobile() {
 	$useragent = strtolower($_SERVER['HTTP_USER_AGENT']);
 	$ualist = array('android', 'midp', 'nokia', 'mobile', 'iphone', 'ipod', 'blackberry', 'windows phone');
